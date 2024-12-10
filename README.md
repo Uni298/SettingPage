@@ -1,1 +1,3 @@
 # SettingPage
+
+ブラウザ上からDiscordBOTのセッティングができるやつです。
