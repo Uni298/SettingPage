@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Auth</title>
+  <link href="sha.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h3>このページにアクセスするにはパスワードを入力してください。</h3>
+  <script src="sha256.js"></script>
+  <form>
+    <div class="cp_iptxt">
+      <input class="ef" type="text" placeholder="" id="pass">
+      <label>パスワード</label>
+      <span class="focus_line"></span>
+    </div>
+  </form>
+  <button onclick="auth()">SEND</button>
+</body>
+
+</html>

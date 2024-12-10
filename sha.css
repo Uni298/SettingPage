@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #ebe4d5;
+  font-family: system-ui;
+}
+.cp_iptxt {
+  position: relative;
+  width: 30%;
+  margin: 20px 0;
+}
+.cp_iptxt input[type='text'] {
+  font: 15px/24px sans-serif;
+  width: 100%;
+  padding-left: 4em;
+  border: none;
+  border-bottom: 1px solid #1b2538;
+  background: transparent;
+  border-radius: 0;
+}
+.cp_iptxt .ef {
+  padding: 4px 0;
+  border: 0;
+  border-bottom: 1px solid #1b2538;
+  background-color: transparent;
+}
+.cp_iptxt .ef ~ .focus_line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  transition: 0.4s;
+  background-color: #da3c41;
+}
+.cp_iptxt .ef ~ label {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  transition: 0.3s;
+  letter-spacing: 0.5px;
+  color: #aaaaaa;
+}
+.cp_iptxt input[type='text']:focus {
+  outline: none;
+}
+.cp_iptxt .ef:focus ~ .focus_line {
+  left: 0;
+  width: 100%;
+  transition: 0.4s;
+}
+.cp_iptxt .ef:focus ~ label {
+  font-size: 12px;
+  top: -16px;
+  transition: 0.3s;
+  color: #da3c41;
+}
+button {
+  display: inline-block; /* ボタンを横並びにする */
+  border: none; /* 枠線をなくす */
+  border-radius: 5px; /* 角丸をつける */
+  padding: 10px 15px; /* ボタンの内側の余白 */
+  margin: 5px; /* ボタン同士の余白 */
+  background-color: #96b97d; /* ボタンの背景色 */
+  color: white; /* ボタンの文字色 */
+  text-align: center; /* ボタンのテキストを中央揃えにする */
+  text-decoration: none; /* テキストに下線をつけない */
+  font-size: 15px; /* テキストのフォントサイズ */
+  cursor: pointer; /* マウスポインタを変更する */
+}
