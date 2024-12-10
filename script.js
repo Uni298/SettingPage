@@ -1,7 +1,7 @@
 function request(value) {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", `
-https://script.google.com/macros/s/AKfycbzfU_7TQ0OFA1loB66qQja6pzakj0f6guKJVsDP1-YoVla96rJVE8qy-lPT6_uKDT29Dw/exec?value=${value}
+https://script.google.com/macros/s/AKfycbwQLYEknPnEu47ls4tyfJxcYZh8y9mUS9CMb1ZXduj1RrL2_jwfk5VXb0mpmfRwOK7oOg/exec?value=${value}
 `);
   xhr.send();
   xhr.responseType = "json";
