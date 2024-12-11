@@ -16,6 +16,6 @@ function request(value) {
 }
 function send() {
   var val = document.getElementById("val").value;
-  request(val.replace(/\n/g,"^"));
+  request(val.replace(/\n/g,"@"));
   alert("SEND!")
 }
