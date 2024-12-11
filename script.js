@@ -1,7 +1,7 @@
 function request(value) {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", `
-https://script.google.com/macros/s/AKfycbxuJiR2-miW6ePgjZZhfxPZHd4XH8WpGuMSf-yICv6E1nDtAt629UvEQ9kBimyxmSMPQw/exec?value=${value}
+ https://script.google.com/macros/s/AKfycbxUaeBlS0GxvjdsIjmpvErlPbBsd--d_6Szef9iFsago2l_ecPCnINzw7B-pniuWuyLIg/exec?value=${value}
 `);
   xhr.send();
   xhr.responseType = "json";
@@ -16,6 +16,6 @@ https://script.google.com/macros/s/AKfycbxuJiR2-miW6ePgjZZhfxPZHd4XH8WpGuMSf-yIC
 }
 function send() {
   var val = document.getElementById("val").value;
-  request(val);
+  request(val.replace(/\n/g,"^"));
   alert("SEND!")
 }
